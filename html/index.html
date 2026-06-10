@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio - Hồ Lý Minh Phước</title>
-    <link rel="stylesheet" href="../css/base.css/variables.css">
+    <link rel="stylesheet" href="../css/base/variables.css">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
@@ -23,6 +23,7 @@
     </header>
 
     <main>
+        <!-- HERO -->
         <section class="hero section" id="home">
             <div class="hero-content container">
                 <div>
@@ -44,17 +45,21 @@
             </div>
         </section>
 
+        <!-- ABOUT -->
         <section class="section about-section" id="about">
             <div class="container">
                 <h2>Giới thiệu</h2>
-                <p>
+
+                <!-- id để JS cập nhật -->
+                <p id="about-desc">
                     Tôi là nhà phát triển web sử dụng HTML và CSS để tạo trải nghiệm người dùng trực quan, sạch sẽ và dễ
                     tiếp cận.
                 </p>
+
                 <div class="about-grid">
                     <div class="about-card">
                         <h3>Kỹ năng</h3>
-                        <ul>
+                        <ul id="about-skills">
                             <li>HTML5</li>
                             <li>CSS3</li>
                             <li>Responsive Design</li>
@@ -63,7 +68,7 @@
                     </div>
                     <div class="about-card">
                         <h3>Giá trị</h3>
-                        <p>
+                        <p id="about-values">
                             Tôi tin vào thiết kế rõ ràng, nội dung dễ đọc và trang web hoạt động tốt trên mọi thiết bị.
                         </p>
                     </div>
@@ -71,13 +76,16 @@
             </div>
         </section>
 
+        <!-- PROJECTS -->
         <section class="section projects-section" id="projects">
             <div class="container">
                 <div class="section-heading">
                     <h2>Projects</h2>
                     <p>Những mẫu website và giao diện đã hoàn thành.</p>
                 </div>
-                <div class="project-grid">
+
+                <!-- id để JS render lại toàn bộ danh sách project -->
+                <div class="project-grid" id="project-grid">
                     <article class="project-card">
                         <h3>Portfolio cá nhân</h3>
                         <p>Trang giới thiệu cá nhân với thông tin, dự án và liên hệ.</p>
@@ -94,18 +102,19 @@
             </div>
         </section>
 
+        <!-- CONTACT -->
         <section class="section contact-section" id="contact">
             <div class="container contact-card">
                 <h2>Liên hệ</h2>
-                <p>Nếu bạn cần tạo website mới hoặc muốn trao đổi ý tưởng, hãy liên hệ tôi.</p>
+                <p id="contact-desc">Nếu bạn cần tạo website mới hoặc muốn trao đổi ý tưởng, hãy liên hệ tôi.</p>
                 <div class="contact-details">
                     <div>
                         <strong>Email</strong>
-                        <p>minhphuoc@example.com</p>
+                        <p id="contact-email">minhphuoc@example.com</p>
                     </div>
                     <div>
                         <strong>Điện thoại</strong>
-                        <p>+84 123 456 789</p>
+                        <p id="contact-phone">+84 123 456 789</p>
                     </div>
                 </div>
             </div>
@@ -120,6 +129,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="../js/portfolio.js"></script>
 </body>
 
 </html>
