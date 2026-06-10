@@ -1,0 +1,50 @@
+/* ============================================================
+   UTILS/RESPONSIVE — Breakpoints (luôn import cuối cùng)
+   ============================================================ */
+
+/* ── Tablet ≤ 820px ──────────────────────────────────────────── */
+@media (max-width: 820px) {
+
+    .hero-content,
+    .admin-topbar,
+    .contact-details,
+    .admin-widgets,
+    .admin-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        width: 100%;
+        justify-content: flex-start;
+    }
+}
+
+/* ── Mobile ≤ 520px ──────────────────────────────────────────── */
+@media (max-width: 520px) {
+
+    .hero {
+        padding-top: var(--space-md);
+    }
+
+    .hero-card,
+    .about-card,
+    .project-card,
+    .contact-card,
+    .admin-widget,
+    .admin-card,
+    .login-card {
+        border-radius: 1.25rem;
+        padding: 1.4rem;
+    }
+
+    .button,
+    .button-outline,
+    .button-secondary {
+        width: 100%;
+    }
+}

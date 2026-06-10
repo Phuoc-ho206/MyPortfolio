@@ -1,0 +1,33 @@
+/* ============================================================
+   COMPONENTS/BUTTON
+   ============================================================ */
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-xs);
+    padding: 0.95rem 1.4rem;
+    border: none;
+    border-radius: var(--radius-pill);
+    color: var(--color-surface);
+    background: var(--color-primary);
+    text-decoration: none;
+    cursor: pointer;
+    transition: transform var(--transition-fast), background var(--transition-fast);
+}
+
+.button:hover {
+    transform: translateY(-1px);
+    background: var(--color-primary-medium);
+}
+
+.button-outline {
+    color: var(--color-primary);
+    background: var(--color-primary-light);
+}
+
+.button-secondary {
+    color: var(--color-surface);
+    background: var(--color-secondary);
+}

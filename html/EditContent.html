@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chỉnh sửa nội dung - Admin</title>
+    <link rel="stylesheet" href="../css/base.css/variables.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header class="admin-header">
+        <div class="container admin-topbar">
+            <div>
+                <h1>Chỉnh sửa nội dung</h1>
+                <p>Cập nhật thông tin trên trang chính</p>
+            </div>
+            <a class="button button-outline" href="Admin.html">Quay lại Admin</a>
+        </div>
+    </header>
+
+    <main class="container edit-main">
+        <div class="edit-tabs">
+            <a href="#section-about" class="tab-link">About</a>
+            <a href="#section-projects" class="tab-link">Projects</a>
+            <a href="#section-contact" class="tab-link">Contact</a>
+        </div>
+
+        <!-- About Section -->
+        <section class="edit-section" id="section-about">
+            <h2>Chỉnh sửa - Giới thiệu</h2>
+            <form class="edit-form">
+                <label>
+                    Mô tả ngắn
+                    <textarea rows="3"
+                        placeholder="Nhập mô tả ngắn về bản thân...">Tôi là nhà phát triển web sử dụng HTML và CSS để tạo trải nghiệm người dùng trực quan, sạch sẽ và dễ tiếp cận.</textarea>
+                </label>
+                <label>
+                    Kỹ năng 1
+                    <input type="text" placeholder="VD: HTML5" value="HTML5">
+                </label>
+                <label>
+                    Kỹ năng 2
+                    <input type="text" placeholder="VD: CSS3" value="CSS3">
+                </label>
+                <label>
+                    Kỹ năng 3
+                    <input type="text" placeholder="VD: Responsive Design" value="Responsive Design">
+                </label>
+                <label>
+                    Kỹ năng 4
+                    <input type="text" placeholder="VD: Layout Flexbox / Grid" value="Layout Flexbox / Grid">
+                </label>
+                <label>
+                    Giá trị cốt lõi
+                    <textarea rows="3"
+                        placeholder="Nhập giá trị của bạn...">Tôi tin vào thiết kế rõ ràng, nội dung dễ đọc và trang web hoạt động tốt trên mọi thiết bị.</textarea>
+                </label>
+                <button type="submit" class="button">Lưu thay đổi</button>
+            </form>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="edit-section" id="section-projects">
+            <h2>Chỉnh sửa - Dự án</h2>
+            <form class="edit-form">
+                <div class="project-item">
+                    <h3>Dự án 1</h3>
+                    <label>
+                        Tiêu đề
+                        <input type="text" placeholder="Portfolio cá nhân" value="Portfolio cá nhân">
+                    </label>
+                    <label>
+                        Mô tả
+                        <textarea rows="2"
+                            placeholder="Mô tả dự án...">Trang giới thiệu cá nhân với thông tin, dự án và liên hệ.</textarea>
+                    </label>
+                </div>
+
+                <div class="project-item">
+                    <h3>Dự án 2</h3>
+                    <label>
+                        Tiêu đề
+                        <input type="text" placeholder="Landing Page" value="Landing Page">
+                    </label>
+                    <label>
+                        Mô tả
+                        <textarea rows="2"
+                            placeholder="Mô tả dự án...">Thiết kế landing page thân thiện trên di động, tối ưu tốc độ.</textarea>
+                    </label>
+                </div>
+
+                <div class="project-item">
+                    <h3>Dự án 3</h3>
+                    <label>
+                        Tiêu đề
+                        <input type="text" placeholder="Dashboard mẫu" value="Dashboard mẫu">
+                    </label>
+                    <label>
+                        Mô tả
+                        <textarea rows="2"
+                            placeholder="Mô tả dự án...">Giao diện quản trị đơn giản để quản lý nội dung và thống kê.</textarea>
+                    </label>
+                </div>
+
+                <button type="submit" class="button">Lưu thay đổi</button>
+            </form>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="edit-section" id="section-contact">
+            <h2>Chỉnh sửa - Liên hệ</h2>
+            <form class="edit-form">
+                <label>
+                    Email
+                    <input type="email" placeholder="your@email.com" value="minhphuoc@example.com">
+                </label>
+                <label>
+                    Số điện thoại
+                    <input type="tel" placeholder="+84 123 456 789" value="+84 123 456 789">
+                </label>
+                <label>
+                    Địa chỉ
+                    <input type="text" placeholder="VD: Thành phố HCM, Việt Nam" value="Thành phố HCM, Việt Nam">
+                </label>
+                <label>
+                    Mô tả liên hệ
+                    <textarea rows="3"
+                        placeholder="Nhập thông tin bổ sung...">Nếu bạn cần tạo website mới hoặc muốn trao đổi ý tưởng, hãy liên hệ tôi.</textarea>
+                </label>
+                <button type="submit" class="button">Lưu thay đổi</button>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>

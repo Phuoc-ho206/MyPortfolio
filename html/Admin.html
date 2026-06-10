@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="../css/base.css/variables.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header class="admin-header">
+        <div class="container admin-topbar">
+            <div>
+                <h1>Admin Dashboard</h1>
+                <p>Quản lý nội dung trang chính và kiểm soát thông tin.</p>
+            </div>
+            <a class="button button-outline" href="index.html">Xem trang chính</a>
+        </div>
+    </header>
+
+    <main class="container admin-main">
+        <section class="admin-section" id="stats">
+            <h2>Biểu đồ Thống kê</h2>
+            <div class="chart-container">
+                <svg class="area-chart" viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="areaGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                            <stop offset="0%" style="stop-color:rgba(230,126,34,0.4);stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:rgba(230,126,34,0.05);stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+
+                    <line x1="40" y1="250" x2="580" y2="250" stroke="#e8e8e8" stroke-width="1" />
+                    <line x1="40" y1="200" x2="580" y2="200" stroke="#e8e8e8" stroke-width="1" />
+                    <line x1="40" y1="150" x2="580" y2="150" stroke="#e8e8e8" stroke-width="1" />
+                    <line x1="40" y1="100" x2="580" y2="100" stroke="#e8e8e8" stroke-width="1" />
+                    <line x1="40" y1="50" x2="580" y2="50" stroke="#e8e8e8" stroke-width="1" />
+
+                    <line x1="40" y1="30" x2="40" y2="270" stroke="#333" stroke-width="2" />
+                    <line x1="40" y1="270" x2="580" y2="270" stroke="#333" stroke-width="2" />
+
+                    <polygon
+                        points="40,270 100,220 160,200 220,180 280,160 340,150 400,140 460,130 520,120 580,110 580,270"
+                        fill="url(#areaGradient)" stroke="none" />
+
+                    <polyline points="40,270 100,220 160,200 220,180 280,160 340,150 400,140 460,130 520,120 580,110"
+                        fill="none" stroke="#e67e22" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" />
+
+                    <circle cx="40" cy="270" r="4" fill="#e67e22" />
+                    <circle cx="100" cy="220" r="4" fill="#e67e22" />
+                    <circle cx="160" cy="200" r="4" fill="#e67e22" />
+                    <circle cx="220" cy="180" r="4" fill="#e67e22" />
+                    <circle cx="280" cy="160" r="4" fill="#e67e22" />
+                    <circle cx="340" cy="150" r="4" fill="#e67e22" />
+                    <circle cx="400" cy="140" r="4" fill="#e67e22" />
+                    <circle cx="460" cy="130" r="4" fill="#e67e22" />
+                    <circle cx="520" cy="120" r="4" fill="#e67e22" />
+                    <circle cx="580" cy="110" r="4" fill="#e67e22" />
+
+                    <text x="40" y="290" text-anchor="middle" font-size="12" fill="#666">T1</text>
+                    <text x="100" y="290" text-anchor="middle" font-size="12" fill="#666">T2</text>
+                    <text x="160" y="290" text-anchor="middle" font-size="12" fill="#666">T3</text>
+                    <text x="220" y="290" text-anchor="middle" font-size="12" fill="#666">T4</text>
+                    <text x="280" y="290" text-anchor="middle" font-size="12" fill="#666">T5</text>
+                    <text x="340" y="290" text-anchor="middle" font-size="12" fill="#666">T6</text>
+                    <text x="400" y="290" text-anchor="middle" font-size="12" fill="#666">T7</text>
+                    <text x="460" y="290" text-anchor="middle" font-size="12" fill="#666">T8</text>
+                    <text x="520" y="290" text-anchor="middle" font-size="12" fill="#666">T9</text>
+                    <text x="580" y="290" text-anchor="middle" font-size="12" fill="#666">T10</text>
+
+                    <text x="25" y="275" text-anchor="end" font-size="12" fill="#666">0</text>
+                    <text x="25" y="255" text-anchor="end" font-size="12" fill="#666">250</text>
+                    <text x="25" y="205" text-anchor="end" font-size="12" fill="#666">500</text>
+                    <text x="25" y="155" text-anchor="end" font-size="12" fill="#666">750</text>
+                    <text x="25" y="105" text-anchor="end" font-size="12" fill="#666">1000</text>
+                    <text x="25" y="55" text-anchor="end" font-size="12" fill="#666">1250</text>
+                </svg>
+            </div>
+            <p class="chart-note">Lượt truy cập hàng tuần</p>
+        </section>
+
+        <section class="admin-section" id="manage">
+            <h2>Quản lý nội dung</h2>
+            <div class="admin-grid">
+                <div class="admin-card">
+                    <h3>About</h3>
+                    <p>Chỉnh sửa đoạn giới thiệu và kỹ năng hiển thị trên trang chính.</p>
+                    <a href="EditContent.html?section=about" class="button button-secondary">Sửa About</a>
+                </div>
+                <div class="admin-card">
+                    <h3>Projects</h3>
+                    <p>Quản lý danh sách dự án, tiêu đề và mô tả.</p>
+                    <a href="EditContent.html?section=projects" class="button button-secondary">Sửa Projects</a>
+                </div>
+                <div class="admin-card">
+                    <h3>Contact</h3>
+                    <p>Chỉnh sửa email, số điện thoại và thông tin liên hệ.</p>
+                    <a href="EditContent.html?section=contact" class="button button-secondary">Sửa Contact</a>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
