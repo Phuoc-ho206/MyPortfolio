@@ -1,15 +1,11 @@
-/* ============================================================
-   SECTIONS/HEADER — Site header, navbar, logo, nav links
-   ============================================================ */
-
-/* ── Header shell ─────────────────────────────────────────────── */
+/* Header shell */
 .site-header,
 .admin-header {
     background: var(--color-surface);
     box-shadow: var(--shadow-header);
 }
 
-/* ── Navbar ──────────────────────────────────────────────────── */
+/* Navbar */
 .navbar {
     display: flex;
     align-items: center;
@@ -18,7 +14,7 @@
     padding: var(--space-md) 0;
 }
 
-/* ── Logo ────────────────────────────────────────────────────── */
+/* Logo */
 .logo {
     font-weight: 700;
     color: var(--color-primary);
@@ -26,7 +22,7 @@
     font-size: var(--font-size-lg);
 }
 
-/* ── Nav links ───────────────────────────────────────────────── */
+/* Nav links */
 .nav-links {
     display: flex;
     flex-wrap: wrap;

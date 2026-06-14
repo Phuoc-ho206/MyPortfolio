@@ -1,20 +1,20 @@
-/* ── Base ────────────────────────────────────────────────────── */
+/* Base */
 @import url("base/variables.css");
 @import url("base/reset.css");
 
-/* ── Utils ───────────────────────────────────────────────────── */
+/* Utils */
 @import url("utils/layout.css");
 
-/* ── Components ──────────────────────────────────────────────── */
+/* Components */
 @import url("components/button.css");
 @import url("components/badge.css");
 @import url("components/card.css");
 
-/* ── Sections ────────────────────────────────────────────────── */
+/* Sections */
 @import url("sections/header.css");
 @import url("sections/hero.css");
 @import url("sections/contacts.css");
 @import url("sections/admin.css");
 
-/* ── Responsive ──────────────────────────────────────────────── */
+/* Responsive */
 @import url("utils/responsive.css");

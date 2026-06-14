@@ -1,14 +1,10 @@
-/* ============================================================
-   UTILS/LAYOUT — Container, section padding, grid helpers
-   ============================================================ */
-
-/* ── Container ───────────────────────────────────────────────── */
+/* Container */
 .container {
     width: min(1100px, 100% - 2rem);
     margin: 0 auto;
 }
 
-/* ── Section ─────────────────────────────────────────────────── */
+/* Section */
 .section {
     padding: var(--space-3xl) 0;
 }
@@ -23,7 +19,7 @@
     margin-bottom: var(--space-sm);
 }
 
-/* ── Grid helpers ─────────────────────────────────────────────── */
+/* Grid helpers */
 .about-grid,
 .project-grid,
 .admin-grid,

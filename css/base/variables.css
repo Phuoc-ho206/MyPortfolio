@@ -1,43 +1,29 @@
 :root {
-    /* ── Brand colors ─────────────────────────────────────────── */
     --color-primary: #e67e22;
     --color-primary-light: rgba(230, 126, 34, 0.1);
     --color-primary-medium: rgba(230, 126, 34, 0.15);
     --color-primary-glow: rgba(230, 126, 34, 0.3);
     --color-secondary: #c27830;
     --color-secondary-alt: #b8672d;
-    /* gradient endpoint hero */
 
-    /* ── Neutrals ──────────────────────────────────────────────── */
     --color-bg: #fcf7f1;
     --color-surface: #ffffff;
     --color-surface-warm: #fff8f4;
-    /* input bg, contact detail bg */
     --color-surface-soft: #f9f3f0;
-    /* demo accounts bg, project-item bg */
 
     --color-border: #d4a574;
     --color-border-light: #e5e5e5;
-    /* card borders, table lines */
     --color-border-soft: #f0d5c3;
-    /* demo table, project-item border */
     --color-border-footer: #e8e8e8;
 
-    /* ── Text ──────────────────────────────────────────────────── */
     --color-text: #3d3d3d;
     --color-text-muted: #575757;
-    /* card body text */
     --color-text-subtle: #4a4a4a;
-    /* hero paragraph */
     --color-text-dim: #6d6d6d;
-    /* footer */
     --color-text-faint: #6b7280;
-    /* login note */
     --color-text-label: #444;
-    /* form labels */
     --color-text-heading: #333;
 
-    /* ── Status colors ─────────────────────────────────────────── */
     --color-success: #228b22;
     --color-success-bg: rgba(34, 139, 34, 0.15);
     --color-info: #1e90ff;
@@ -47,14 +33,12 @@
     --color-danger: #dc143c;
     --color-danger-bg: rgba(220, 20, 60, 0.15);
 
-    /* ── Typography ────────────────────────────────────────────── */
     --font-family: 'Arial', sans-serif;
     --font-size-sm: 0.85rem;
     --font-size-base: 0.95rem;
     --font-size-md: 1rem;
     --font-size-lg: 1.2rem;
 
-    /* ── Spacing ───────────────────────────────────────────────── */
     --space-xs: 0.5rem;
     --space-sm: 0.75rem;
     --space-md: 1rem;
@@ -63,18 +47,15 @@
     --space-2xl: 2.5rem;
     --space-3xl: 4rem;
 
-    /* ── Border radius ─────────────────────────────────────────── */
     --radius-sm: 0.85rem;
     --radius-md: 1rem;
     --radius-lg: 1.5rem;
     --radius-pill: 999px;
 
-    /* ── Shadows ───────────────────────────────────────────────── */
     --shadow-card: 0 8px 24px rgba(0, 0, 0, 0.04);
     --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.08);
     --shadow-md: 0 20px 50px rgba(0, 0, 0, 0.08);
     --shadow-header: 0 2px 16px rgba(0, 0, 0, 0.05);
 
-    /* ── Transitions ───────────────────────────────────────────── */
     --transition-fast: 0.2s ease;
 }

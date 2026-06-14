@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // ─── 1. TAB SWITCHING SYSTEM ──────────────────────────────────
+    // 1. TAB SWITCHING SYSTEM
     const tabLinks = document.querySelectorAll('.tab-link');
     const sections = document.querySelectorAll('.edit-section');
 
@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 
-    // ─── 2. FORM STATE SYSTEM ─────────────────────────────────────
+    // 2. FORM STATE SYSTEM
     // Form field elements
     const fields = {
         // About
@@ -110,7 +110,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 
-    // ─── 3. FORM SUBMISSION & TOAST SYSTEM ─────────────────────────
+    // 3. FORM SUBMISSION & TOAST SYSTEM
     function showToast(toastId) {
         const toast = document.getElementById(toastId);
         if (toast) {

@@ -1,8 +1,4 @@
-/* ============================================================
-   SECTIONS/ADMIN — Login, dashboard, tables, chart, edit panel
-   ============================================================ */
-
-/* ── Login page ──────────────────────────────────────────────── */
+/* Login page */
 .login-page {
     background: linear-gradient(135deg, #fff5ed, var(--color-surface));
     min-height: 100vh;
@@ -59,7 +55,7 @@
     color: var(--color-text-faint);
 }
 
-/* ── Demo accounts box ───────────────────────────────────────── */
+/* Demo accounts box */
 .demo-accounts {
     background: var(--color-surface-soft);
     border: 1px solid var(--color-border-soft);
@@ -99,7 +95,7 @@
     background: rgba(230, 126, 34, 0.05);
 }
 
-/* ── Admin topbar & main ─────────────────────────────────────── */
+/* Admin topbar & main */
 .admin-topbar {
     display: flex;
     flex-wrap: wrap;
@@ -132,7 +128,7 @@
     margin-top: var(--space-md);
 }
 
-/* ── Stats table ─────────────────────────────────────────────── */
+/* Stats table */
 .admin-table-wrapper {
     overflow-x: auto;
     border-radius: var(--radius-md);
@@ -170,7 +166,7 @@
     border-bottom: none;
 }
 
-/* ── Chart ───────────────────────────────────────────────────── */
+/* Chart */
 .chart-container {
     background: var(--color-surface);
     border: 1px solid var(--color-border-light);
@@ -193,7 +189,7 @@
     font-size: var(--font-size-base);
 }
 
-/* ── Edit panel — tabs ───────────────────────────────────────── */
+/* Edit panel — tabs */
 .edit-main {
     padding: var(--space-xl) 0 var(--space-3xl);
 }
@@ -224,7 +220,7 @@
     border-bottom-color: var(--color-primary);
 }
 
-/* ── Edit panel — sections ───────────────────────────────────── */
+/* Edit panel — sections */
 .edit-section {
     display: none;
     background: var(--color-surface);
@@ -242,7 +238,7 @@
     display: block;
 }
 
-/* ── Edit form ───────────────────────────────────────────────── */
+/* Edit form */
 .edit-form {
     display: grid;
     gap: var(--space-lg);
