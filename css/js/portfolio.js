@@ -32,50 +32,48 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // 3. Load projects grid
+    // 3. Load projects
     const p1_title = localStorage.getItem('portfolio_p1_title');
     const p1_desc = localStorage.getItem('portfolio_p1_desc');
+
     const p2_title = localStorage.getItem('portfolio_p2_title');
     const p2_desc = localStorage.getItem('portfolio_p2_desc');
+
     const p3_title = localStorage.getItem('portfolio_p3_title');
     const p3_desc = localStorage.getItem('portfolio_p3_desc');
 
-    if (p1_title !== null || p1_desc !== null || p2_title !== null || p2_desc !== null || p3_title !== null || p3_desc !== null) {
-        const projectGrid = document.getElementById('project-grid');
-        if (projectGrid) {
-            const projectsData = [
-                {
-                    title: p1_title !== null ? p1_title : "Portfolio cá nhân",
-                    desc: p1_desc !== null ? p1_desc : "Trang giới thiệu cá nhân với thông tin, dự án và liên hệ."
-                },
-                {
-                    title: p2_title !== null ? p2_title : "Landing Page",
-                    desc: p2_desc !== null ? p2_desc : "Thiết kế landing page thân thiện trên di động, tối ưu tốc độ."
-                },
-                {
-                    title: p3_title !== null ? p3_title : "Dashboard mẫu",
-                    desc: p3_desc !== null ? p3_desc : "Giao diện quản trị đơn giản để quản lý nội dung và thống kê."
-                }
-            ];
+    // Lấy tất cả project-card có sẵn trong HTML
+    const projectCards = document.querySelectorAll('.project-card');
 
-            projectGrid.innerHTML = '';
-            projectsData.forEach(proj => {
-                const article = document.createElement('article');
-                article.className = 'project-card';
-                
-                const h3 = document.createElement('h3');
-                h3.textContent = proj.title;
-                
-                const p = document.createElement('p');
-                p.textContent = proj.desc;
-                
-                article.appendChild(h3);
-                article.appendChild(p);
-                projectGrid.appendChild(article);
-            });
+    if (projectCards.length >= 3) {
+
+        // Project 1
+        if (p1_title !== null) {
+            projectCards[0].querySelector('.project-info h3').textContent = p1_title;
+        }
+
+        if (p1_desc !== null) {
+            projectCards[0].querySelector('.project-info p').textContent = p1_desc;
+        }
+
+        // Project 2
+        if (p2_title !== null) {
+            projectCards[1].querySelector('.project-info h3').textContent = p2_title;
+        }
+
+        if (p2_desc !== null) {
+            projectCards[1].querySelector('.project-info p').textContent = p2_desc;
+        }
+
+        // Project 3
+        if (p3_title !== null) {
+            projectCards[2].querySelector('.project-info h3').textContent = p3_title;
+        }
+
+        if (p3_desc !== null) {
+            projectCards[2].querySelector('.project-info p').textContent = p3_desc;
         }
     }
-
     // 4. Load contact information
     const contactDesc = localStorage.getItem('portfolio_contact_desc');
     if (contactDesc !== null) {
