@@ -13,8 +13,8 @@
 /* ── Sections ────────────────────────────────────────────────── */
 @import url("sections/header.css");
 @import url("sections/hero.css");
-@import url("sections/contact-footer.css");
+@import url("sections/contacts.css");
 @import url("sections/admin.css");
 
-/* ── Responsive (luôn cuối cùng) ─────────────────────────────── */
+/* ── Responsive ──────────────────────────────────────────────── */
 @import url("utils/responsive.css");

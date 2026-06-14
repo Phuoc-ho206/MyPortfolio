@@ -234,12 +234,10 @@
     box-shadow: var(--shadow-sm);
 }
 
-/* Hiển thị section được target qua URL hash */
 .edit-section:target {
     display: block;
 }
 
-/* Mặc định section đầu tiên luôn hiện */
 #section-about {
     display: block;
 }
