@@ -28,3 +28,64 @@
     margin: var(--space-sm) 0 0;
     color: var(--color-text-muted);
 }
+
+/* Project card - image layout */
+.project-card {
+    padding: 0;
+    overflow: hidden;
+}
+
+.project-image-wrap {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+}
+
+.project-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover .project-image {
+    transform: scale(1.05);
+}
+
+.project-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.project-card:hover .project-overlay {
+    opacity: 1;
+}
+
+.project-overlay span {
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+}
+
+.project-info {
+    padding: 1.25rem 1.75rem 1.75rem;
+}
+
+.project-info h3 {
+    margin-top: 0;
+    margin-bottom: var(--space-sm);
+}
+
+.project-info p {
+    margin: 0;
+    color: var(--color-text-muted);
+}
